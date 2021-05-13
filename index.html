@@ -1,136 +1,178 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>
-        my first webpage
-    </title>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Shiro bet</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+h1 {
+ background-color: gold;
+ padding:20px;
+ color:blue;
+ text-align: center;
+}
+.navigate {
+  display: flex;
+  flex-wrap: wrap;
+  font-size:24px;
+  margin: 20px 0px 0px 0px;
+}
+.page {
+    padding:10px;
+}
+h2 {
+  color:gold
+}
+b {
+  color: red;
+  font-size: 20px;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
 
-    <style >
-      .container {
-        display: flex;
-        flex-wrap: wrap;
+}
 
-      }
+body {font-family:"Times New Roman", serif}
+h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
+</style>
+<body>
 
-      .container > div {
+<!-- Navigation (Sits on top) -->
+<h1>
+  ማሕበር ኪዳነምህረት!
+  <div class="navigate">
+    <div class="page">
+      <a href="index.html" >Home</a>
+    </div>
+    <div class="page">
+      <a href="#contact" >Contact</a>
+    </div>
+    <div class="page">
+      <a href="#about">About</a>
+    </div>
+    <div class="page">
+      <a href="login.html">Login</a>
+    </div>
 
-        margin: 20px;
-        width: 200px;
-      }
+  </div>
 
-      @media print {
-        #screen-only {
-          display: none;
-        }
-      }
-
-      img:hover {
-        width:200px;
-        height:200px;
-      }
-
-      .border:hover {
-        border: 2px solid blue;
-        background-color: gold;
-      }
-
-      h1,p {
-        text-align: center;
-      }
-       h1 {
-        background-color: gold;
-        margin:20px;
-        padding:20px;
-      }
-
-      .menu {
-        display: flex;
-        flex-wrap: wrap;
-        font-size:24px;
-        margin: 20px 0px 0px 0px;
-
-      }
-
-      .page {
-          padding:10px;
-      }
-
-    </style>
-  </head>
-  <body>
-      <h1>
-        ማሕበር ኪዳነምህረት!
-        <div class="menu">
-          <div class="page">
-            <a href="#" >home</a>
-          </div>
-          <div class="page">
-            <a href="#" >Login</a>
-          </div>
-          <div class="page">
-            <a href="#">about us</a>
-          </div>
-        </div>
-
-      </h1>
-      <div id="screen-only" class="container">
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"> <p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"> <p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"> <p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"> <p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"> <p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-          <div class="border"><a href="#"><img src="images\erget.jpeg" alt="ስእሊ-ኣድሕኖ.jpg" width="200px"><p>መድሃኒኣለም</p></a></div>
-        <div class="border">B. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">C. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">D. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">E. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">F. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">G. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">H. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">I. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">J. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">K. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">L. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">M. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">N. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">O. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">P. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">Q. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        <div class="border">R. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</h1>
+<!--<div class="container" >
+<a href="#home" class="w3-bar-item w3-button">Traditional Eritrean food</a>
 
 
-      </div>
+<a href="#about" class="w3-bar-item w3-button">About</a>
+<a href="#menu" class="w3-bar-item w3-button">Menu</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</div>
+</div>
+-->
+<!-- Start Content -->
+<div id="home" class="w3-content">
 
-  </body>
+<!-- Image in Display Container -->
+<div class="w3-padding-top-48">
+<div class="w3-display-container">
+<img src="images/kdanemhret.jpg" alt="kdanemhret" style="width:70%">
+
+<div class="w3-display-bottomleft w3-padding-small w3-opacity w3-hide-small">
+<h2>ቅድስት ኪዳነምህረት ማሕበርና ትባሪኽ  </h2>
+</div>
+
+</div>
+</div>
+
+<!-- About -->
+<div id="about" class="w3-padding-top-64">
+<div class="w3-row">
+
+<div class="w3-half w3-padding-large w3-hide-small">
+<img src="images/kdistDinglMariam.jpg" class="w3-round w3-image w3-opacity-min" alt="weladit amlak" style="width:100%">
+</div>
+
+<div class="w3-half w3-padding-large">
+<h1 class="w3-center">About us</h1><br>
+<h5 class="w3-center"> ማሕበር <b>ቅድስት ኪዳነምህረት</b> since early 2020</h5>
+<p class="w3-large">
+Seint kdanemhret noneprofit Group was founded in group of few peaple in switzerland by yonas gebrehiwot, who beggan to arise and share the main idea with his some close frainds that we can start a nonprofit Group, its even possible with only 6 peaple to provide some financial support to our peaple who live in very low living standards by collecting about 2% of our income monthly. the main goal of this nonprofit group is not only giving them financial support but also give them hope, advices how thay overcome their current situations and even show them our love and passions.</p>
+<p class="w3-large w3-text-grey w3-hide-medium">
+  ማሕበር ክዳነምህረት ብምብግጋስ ውሑዳት ሰባት ኣብ መጀመርያ 2020 ተመስሪታ፣ እዛ ናጻ ረብሓ ዝኾነት ማሕበር ብ 6 ሰባት ጥራይ ተበጊሳ፣ ቅንዲ ዕላማ እዛ ማሕበር ነፍሲ ወከፍ ኣባል ካብ ዘለዎ ብፍቅዱ ብ ውሑድ 20.- ፍርንክ ወርሓዊ ብምውጻእ፣ ኣብ ነፍሲ ወከፍ ሰለስተ ወርሒ ኣኪብካ ንኣብ ትሑት መነባቢሮ ንዚርከብ ወገን፣ ንዕለታዊ ህወቱ ንምምራሕ ብፍሉይ ዝተሸገረ፣ ናኣብነት ኣላዪ ንዘይ ብሎም ድኻታት ስድራቤት፣ ብጥዕና ብስንክልና ምኽንያት ናባዪ ንዝሰኣኑ፣ ንካልእ ኣብዚ ንዘይ ተጥቕሰ ሽግራትን ውን ኣጽኒዓ፣ ንወገና ብገንዘብን ብሞራልን ኣለኹ ብምባል ርሕራሄን ተስፋን ንወገናታ ብምልጋስ ብመንፈስ ምስኦም እትነብር ማሕበር ምዃና ፍሉይ ይገብራ። ኩሉ ስራሕ እዚ ማሕበር ብጽፉፍን ብመጽናዕትን ብዝተወደበ መልክዕን ብሓሳብን ሪኢቶን ኩሉ ኣባል ማእከል ብምግባር ዝማሓደርን ዝተወሰነን ዩ፣ ንፍሲ ወከፍ ስርሕ ካብ መጀመርታ ክሳብ ፍጻመ ናይቲ ዝዋሃብ ሓገዝ ብሰነድን ብዝተራጋገጸን መስርሕ ይካይድ። ኩሉ ዝተሰረሐ ስራሕ ብዚርዝር ብዝተሰነደ መልክዕ ብድጋፍ መራጋገጽን ንኹሉ ኣባል ብመደብ ይሕበር። ንግዝዩኡ ብ 4 ኮሚተ ግዚኦም ብምውፋይ ስራሕ ናይዛ ማሕበር ዕውት ንምግባር ዝነጥፉ ኣሕዋትና ኪዳነምህረት ኣብ ዝገብሩዎ ኩሉ ስራሕ ኣሳልጦን ጽፈትን ዝሎዎ ንኽሰርሑ፣ ኣብ ህወቶም ጥዕናን ጥበብን ምስትዋዓልን ትዕድለልና።
+  ብዓቕምና ኣብ ጎድኒ ወገና ክንከዊን እትብሉ ኣሕዋት ኣሓት፣ መደብን ስራሕን ማሕበር ኪዳነምህረት ነዚ ይመስል፣
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- Menu -->
+<div id="menu" class="w3-padding-top-64">
+<h1 class="w3-center">ቀንዲ ዕላማ ማሕበር</h1>
+<div class="w3-row">
+
+<div class="w3-col l6 m6 w3-padding-large">
+
+<h5>ተኻፋሊ በረኸት ምዃን፣ ናይ እግዚኣብሄር ስራሕ ምስራሕ ዩ</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ንጽጉም ወገንካ ተስፋ ምዃን</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ሰብ ንዝሰኣነ ወገንካ ሰብ ምዃን</h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠</p><br>
+
+<h5>ንዝወደቐ ወገንካ ብሓገዝን ብሞራልን ሓይሊ ምዃን  </h5>
+<p class="w3-text-grey">
+፠፠፠፠፠  ጥቕሲ ቅዱስ ብቀረባ እዋን ክጸሓፍዪ   ፠፠፠፠፠ </p>
+
+<h5> ብስም ኪዳነምህረት  </h5>
+<p class="w3-text-grey">
+ ኣባል እዚ ማሕበር ሽግርን ጸገምን ወገኑ ዘጨንቖ፣ ርህሩህ፣ ካብ ዘለዎ ንጽጉም ሓዉ ኣካፊሉ ተደሲቱ ዝሕዲር ሰብ ዩ።</p>
+
+</div>
+
+<div class="w3-col l6 m6 w3-padding-large">
+<img src="images/higi.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+</div>
+
+</div>
+
+<div class="w3-container w3-text-grey">
+<p>ዓቕሚ እዚ ማህበር ኣብዚ እዋን እዚ ብ 22 ኣባላት ዝካየድ ዘሎ ዪ።
+</p>
+</div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="w3-container w3-padding-64">
+<h1>Contact</h1>
+
+<p class="w3-text-blue-grey w3-large">
+<b>ማሕበር ኪዳነምህረት ስዊዘርላንድ, Mühlemattstrasse 70, 3007 Bern, BE</b></p>
+<p>You can also contact us by phone 0794725068 or email shirobet@gmail.com, or send us a message here:<br>
+ተወሳኺ ሕበረታ ወይ ክትሓቱ ምስትደልዩ በዚ ኣብ ላዕሊ ተቐሚጡ ዝሎ ቁጽሪ ተልፎን ወይ ብ email ክትረኽቡና ትኽእሉ ኢኹም። ንጽጉም ወገንካ ካብ ዘለካ ምክፋል፣ ኣብ ሰማይ በት ምህናጽ ዩ፣ ኣብ መረት ከለኻ በረኸትን ጥዕናን ምውሳኽ ዩ፣ ንክርስትያን።</p>
+
+<form action="/action_page.php" target="_blank">
+<p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+<p><input class="w3-input w3-padding-16" type="email" placeholder="Your email" required name="Email"></p>
+<p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+<p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+<p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+</form>
+
+<img src="images/homebest.jpg" class="w3-image" style="width:100%">
+<p class="w3-center w3-padding">Powered by <a href="index.html" title="by Haileab bsrat" target="_blank"><b>ማሕበር ኪዳነምህረት</b></a></p>
+</div>
+
+<!-- End Content -->
+</div>
+
+</body>
 </html>
