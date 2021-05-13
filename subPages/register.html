@@ -19,7 +19,7 @@
       }
 
       h2 {
-        font-size:30px;
+        font-size:24px;
         background-color:gold;
         margin: 10px 10px;
         padding:20px;
@@ -30,21 +30,27 @@
         align:center;
         margin:20px 0px 0px 30%;
       }
-      button:hover {
+      .submit:hover {
         font-size:24px;
         background-color:green;
         color:white;
+      }
+      .submit {
+        font-size:24px;
+        width:200px;
+        background-color:gold;
       }
     </style>
   </head>
   <body>
     <h2>ሓድሽ ኣባል ማሕበር ኪዳነምህረት ስዊዝ ክትኮኑ ምስ ትደልዩ፣ እዚ ቅጥዒ ብምምላእ ይመዝገቡ</h2>
     <form  method="post">
-    FirstName:  <input type="text" name="name"  required><br>
-    LastName:  <input type="text" name="name"  required><br>
-    Email:    <input type="email" name="email" ><br>
-    BirthDate: <input type="date" name="date" required><br>
-    <button type="button" name="register">ኣባል ይመዝገብ</button>
+      <input type="text" name="name" placeholder="FirstName"  required><br>
+      <input type="text" name="name" placeholder="LastName" required><br>
+       <input type="email" name="email"  placeholder="Email"><br>
+       <input type="password"  name="password" placeholder="password" required><br>
+       <input type="text"  name="adress" placeholder="address" required><br>
+       <input class="submit" type="submit" value="ኣባል ይመዝገብ">
 
     </form>
 
