@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title> ማሕበር ኪዳነምህረት ስዊዘርላንድ </title>
+    <style media="screen">
+      * {
+          box-sizing: border-box;
+      }
+      .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+
+      }
+      .inside {
+          border-radius: 15px;
+          background-color: #ffffff;
+          padding: 20px;
+          margin-top: 20px;
+      }
+      h2 {
+        background-color: white;
+        color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>{% block heading %} {% endblock %}</h2>
+    <div class="container">
+      {% block body %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block response %}
+{% endblock %}
+
+{% block heading %}
+  Form page
+{% endblock %}
+
+{% block body %}
+  <form  action="{{ url_for('respondForm') }}" method="post">
+    <input type="text" name="name" placeholder="Enter your name"  required>
+    <button >Submit</button>
+  </form>
+{% endblock %}

@@ -9,6 +9,10 @@
               box-sizing: border-box;
           }
 
+          body {
+            margin:0 100px;
+            background: url("{{ url_for('static', filename='images/b3.jpg')}}");
+          }
           input[type=password], input[type=text] {
               width: 100%;
               padding: 12px;
@@ -54,6 +58,8 @@
               border-radius: 5px;
               background-color: #f2f2f2;
               padding: 20px;
+              margin-bottom: 20px;
+              margin-top: 20px;
           }
 
           .col-25 {
@@ -72,6 +78,20 @@
             color: red;
           }
 
+          p {
+            font-size: 14px;
+          }
+          h1 {
+            color: darkblue;
+            text-align: center;
+          }
+          .header {
+              border-radius: 5px;
+              background-color: #f2faf2;
+              padding: 6px;
+              margin-top: 30px;
+          }
+
           /* Clear floats after the columns */
           .row:after {
               content: "";
@@ -81,24 +101,26 @@
 
           /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
           @media screen and (max-width: 600px) {
-              .col-25, .col-75, input[type=submit], button {
+              .col-25, .col-75 {
                   width: 100%;
-                  margin-top: 0;
+                  margin-top: 0px;
               }
-
-            button,  input[type=submit] {
-                 width: 100%;
-                 margin-top: 10px;
-             }
+               input[type=submit] {
+                  width: 100%;
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+              }
           }
 
     </style>
   </head>
   <body>
-    <h2>ዝኾነ ኣባል ንጥፈታት ማሕበር በዚ ኣትዩ ክከታተል ይኽእል ዩ።</h2>
-    <p><b>Note:</b> you can only login if you are one of the members. you need your <b>username(firstname)</b> and <b>password</b>!</p>
+    <div class="header">
+      <h1>Admin Login</h1>
+    </div>
+
     <div class="container">
-      <form action="{{ url_for('loginProcess') }}" class="logon" method="post">
+      <form action="{{ url_for('adminLoginProcess') }}" class="logon" method="post">
 
         <div class="row">
            <div class="col-25">
@@ -120,8 +142,6 @@
 
           <div class="row">
             <input type="submit" value="login">
-            <a href="{{ url_for('register')}}"><button class="login" type="button" name="button">register</button></a>
-
           </div>
       </form>
     </div>

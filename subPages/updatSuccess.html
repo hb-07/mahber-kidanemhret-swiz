@@ -1,0 +1,9 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+  <b style="color: green">Your data are successfully updated!</b>
+{% endblock %}
+
+{% block body %}
+  Thank you! now you can see your updates you have currenty made. click or tab here:  <a href="{{ url_for('loginForm')}}"><b>I want to login</b></a>
+{% endblock %}

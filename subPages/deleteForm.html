@@ -95,32 +95,22 @@
     </style>
   </head>
   <body>
-    <h2>ዝኾነ ኣባል ንጥፈታት ማሕበር በዚ ኣትዩ ክከታተል ይኽእል ዩ።</h2>
-    <p><b>Note:</b> you can only login if you are one of the members. you need your <b>username(firstname)</b> and <b>password</b>!</p>
+    <h2>Give id of the member you want to delete:</h2>
+
     <div class="container">
-      <form action="{{ url_for('loginProcess') }}" class="logon" method="post">
+      <form action="{{ url_for('deleteProcess') }}" class="logon" method="post">
 
         <div class="row">
            <div class="col-25">
-             <label for="fname">UserName</label>
+             <label for="fname">Id</label>
            </div>
            <div class="col-75">
-             <input type="text" id="fname" name="username" placeholder="Your name..">
+             <input type="text" id="fname" name="Id" placeholder="id">
            </div>
          </div>
 
-         <div class="row">
-            <div class="col-25">
-              <label for="lname">Password</label>
-            </div>
-            <div class="col-75">
-              <input type="password" id="lname" name="password" placeholder="Your password..">
-            </div>
-          </div>
-
           <div class="row">
-            <input type="submit" value="login">
-            <a href="{{ url_for('register')}}"><button class="login" type="button" name="button">register</button></a>
+            <input type="submit" value="Delete">
 
           </div>
       </form>

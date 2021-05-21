@@ -1,0 +1,23 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+ <b style="color: darkblue">Members and activitities managment</b>
+{% endblock %}
+
+{% block body %}
+  <div class="inside">
+    <a href="#"><li>Rules and regulations</li></a>
+    <a href="#"><li>Finance</li></a>
+    <a href="#"><li>Members status</li></a>
+    <a href="#"><li>Meeting Appointment</li></a>
+    <a href="#"><li>Closed activitities</li></a>
+    <a href="#"><li>Activitities in process</li></a>
+  </div>
+
+  <div class="inside">
+    more links ...
+    <a href="{{ url_for('updateForm') }}"><li><b>Update member</b></li></a>
+    <a href="{{ url_for('register')}}"><li><b>Register member</b></li></a>
+    <a href="{{ url_for('deleteForm')}}"><li><b>Delete member</b></li></a>
+  </div>
+{% endblock %}

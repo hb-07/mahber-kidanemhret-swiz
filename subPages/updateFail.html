@@ -1,0 +1,9 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+ update is not possible!
+{% endblock %}
+
+{% block body %}
+  since you are not part of the members!, upadet is not possible. but you can register as a new meber: => <a href="{{ url_for('register')}}"><b>Register</b></a>
+{% endblock %}

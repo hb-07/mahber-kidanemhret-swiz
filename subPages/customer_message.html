@@ -1,0 +1,10 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+ <b style="color: green">confirmation</b>
+{% endblock %}
+
+{% block body %}
+<p style="color: green"><b style="color: blue">{{name}}</b> Your message is sent successfully. Thank you! </p>
+<p> we reply you as soon as possible </p> <a href="{{ url_for('index')}}"><b>Go Back</b></a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+  <b style="color:red">Registration Failed!! !</b>
+{% endblock %}
+
+{% block body %}
+<ul>
+  <li>  ይቕረታ በዚ ዝተዋህበ ስም፣ <b style="color:green"> {{ username }}</b>  ስም ኣቦ፣ <b style="color:green">{{ lastname }}</b> ፣ እንደገና መመዝገብ ኣይካኣልን፣ ምኽንያቱ ኣቐዲሙ በዚ ስም ኣባል ማሕበር ኪዳነምህረት ስለዘሎ.  የቐንየልና!.
+</li>
+  <li>But may be, if you want update some of your data, click here to update your existing data <a href="{{ url_for('updateForm') }}">click here to Update</a></li>
+</ul>
+{% endblock %}

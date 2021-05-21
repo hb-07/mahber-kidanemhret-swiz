@@ -1,0 +1,22 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+  ጌጋ ኣመላልኣ ፎርም!<hr><hr>
+{% endblock %}
+
+{% block body %}
+
+  <h4>ክትኣትዉ ኣይተፈቕደን!!!</h4>
+  <h5>ምኽንያት፣</h5>
+  <h6>ምናልባት ስም ወይ ፓስዎርድ ብትኽክል ዘይምምላእ! እንደገና ንምፍታን ኣብዚ ሊንክ ይጠውቑ።  </h6>
+    <ul>
+      <li><a style="color: blue" href="{{ url_for('loginForm') }}">እንደገና ይፈትኑ</a></li>
+    </ul>
+
+    <h6>ኣባል እንተ ዘይ ጸኒሕኩም፣ ሓድሽ ኣባል ንምዃን ኣብዚ ሊንክ ብምጥዋቕ ኣባል ይመዝገቡ። የቐንየልና! </h6>
+    <ul>
+      <li><a style="color: blue" href="{{ url_for('register') }}"> ሓድሽ እባል መመዝገቢ ፎርም </a></li>
+    </ul>
+  <hr>
+
+{% endblock %}

@@ -51,11 +51,12 @@
 
         .col-75 {
             float: left;
-            width: 75%;
+            width: 100%;
             margin-top: 6px;
         }
         b {
           color: red;
+          cursor: pointer;
         }
 
         /* Clear floats after the columns */
@@ -67,70 +68,65 @@
 
         /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
-            .col-25, .col-75 {
+            .col-25, .col-75, input[type=submit] {
                 width: 100%;
                 margin-top: 0;
             }
-
-            input[type=submit] {
-               width: 100%;
-               margin-top: 10;
-           }
         }
     </style>
   </head>
   <body>
-    <h2 style="background-color: #f2f2f2">ሓድሽ ኣባል ማሕበር ኪዳነምህረት ስዊዝ ክትኮኑ ምስ ትደልዩ፣ እዚ ፎርም ብምምላእ ይመዝገቡ</h2>
-    <p><b>Note:</b> please don't forget your <b>firstname(as username)</b> and <b>password</b> you need it later to login!</p>
+    <h2>ኣባላት ማሕበር ኰንኩም ገን ምናልባት ብጌጋ ወይ ብታህዋኽ ዝመላእኩሞ፣ ክቅየር ዝደልኽሞ ምስ ዝህሉ እዚ ፎሩም ብምምላእ ኣብዴት ይግበሩ።</h2>
+    <p><b>መታሓሳሰቢ፣</b> አዚ ትመልእዎ ሕጂ ኣብ ናይ ኣባላት ማሕበር ኪዳነምህረት ምዝጉብ ኮይኑ ክመሓየሽ ምስትድልዩ ጥራይ ዩ፣</p>
     <div class="container">
-      <form  action="{{ url_for('registrationProcess') }}" method="post">
+      <form  action="{{ url_for('updateMembers') }}" method="post">
         <div class="row">
            <div class="col-25">
-             <label for="fname">UserName</label>
+             <label for="fname"></label>
            </div>
            <div class="col-75">
-             <input type="text" id="fname" name="username" placeholder="Your name..">
+             <input type="text" id="fname" name="username" placeholder="username">
            </div>
          </div>
 
          <div class="row">
             <div class="col-25">
-              <label for="fname">LastName</label>
+              <label for="fname"></label>
             </div>
             <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your lastname..">
+              <input type="text" id="lname" name="lastname" placeholder="lastname">
             </div>
          </div>
 
           <div class="row">
              <div class="col-25">
-               <label for="place">Place</label>
+               <label for="place"></label>
              </div>
              <div class="col-75">
-               <input type="text" id="place" name="place" placeholder="Your place..">
+               <input type="text" id="place" name="place" placeholder="place">
              </div>
            </div>
 
            <div class="row">
               <div class="col-25">
-                <label for="email">Email</label>
+                <label for="email"></label>
               </div>
               <div class="col-75">
-                <input type="email" id="email" name="email" placeholder="Your email..">
+                <input type="email" id="email" name="email" placeholder="email">
               </div>
             </div>
 
             <div class="row">
               <div class="col-25">
-                <label for="password">Password</label>
+                <label for="password"></label>
               </div>
               <div class="col-75">
-                <input type="password" id="password" name="password" placeholder="Your password..">
+                <input type="password" id="password" name="password" placeholder="password">
               </div>
              </div>
 
             <div class="row">
-              <input type="submit" value="እባልነት ይመዝገብ">
+              <input type="submit" value="Update">
             </div>
       </form>
     </div>

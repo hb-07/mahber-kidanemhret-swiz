@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ኣባላት ማሕበር ኪዳነምህረት</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/w3.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+
+        margin: 20px 0;
+    }
+      img {
+        width:30px;
+        height:30px;
+      }
+      h2 {
+        font-size:30px;
+        background-color:gold;
+        margin: 10px 0px 10px 0px;
+        padding:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>ዝርዝር ስም ኣባላት ማሕበር ኪዳነምህረት ስዊዘርላንድ</h2>
+    <div class="w3-container">
+
+      <table class="w3-table w3-bordered w3-striped w3-border">
+        <thead>
+          <tr class="w3-blue">
+            <th>ID</th>
+            <th>UserName</th>
+            <th>LastName</th>
+            <th>Place</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+      {% for member in members %}
+        <tr>
+          <td>{{ member.id }}</td>
+          <td>{{ member.username }}</td>
+          <td>{{ member.lastname }}</td>
+          <td>{{ member.place }}</td>
+          <td> <img src="{{ url_for('static', filename='images/re.jpg') }}" alt="ከፊሉ" > </td>
+        </tr>
+      {% endfor %}
+      </table>
+
+      <div class="container">
+        <ul>
+          <li><a style="color:blue" href="{{ url_for('membersProfile') }}">ፕሮፋይል ኣባላት ማሕበር</a></li>
+          <li><a style="color:blue" href="{{ url_for('completedActivities') }}">ክሳብ ሕጂ ዝተፈጸሙ ንጥፈታት ማሕበር ኪዳነምህረት</a></li>
+          <li><a style="color:blue" href="{{ url_for('information') }}">እዋናዊ ንሰርሓሎም ንጥፈታትን ሓበረታን ነፍሲወከፍ ኣባል ኩሉ ግዜ ኣብዚ ብምጥዋቕ ክንከታተል ይግባእ።</a></li>
+        </ul>
+      </div>
+      <div class="container">
+
+      </div>
+    </div>
+  </body>
+</html>

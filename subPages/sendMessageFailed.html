@@ -1,0 +1,9 @@
+{% extends "subPages/layout/layout.html" %}
+
+{% block heading %}
+  Message not sent!
+{% endblock %}
+
+{% block body %}
+  <p><b style="color: red">Sorry! </b> <b style="color: green">{{name}}</b>, Its not allowed to send the same message again!</p> <a href="{{ url_for('index')}}"><b>Go Back</b></a>
+{% endblock %}
